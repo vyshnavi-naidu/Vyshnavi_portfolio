@@ -36,7 +36,7 @@ const Projects = () => {
 
           <div className="flex gap-3 mt-4">
             <a
-              href="https://github.com/kalpana1103/My_Personal_Portfolio"
+              href="https://github.com/vyshnavi-naidu/Vyshnavi_portfolio"
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 bg-slate-700 text-white rounded-lg text-sm hover:bg-slate-900 transition"
@@ -45,7 +45,7 @@ const Projects = () => {
             </a>
 
             <a
-              href="https://kalpana-vobinaboina-portfolio.netlify.app/"
+              href="https://myportfolio-vyshnavi.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-500 transition"
