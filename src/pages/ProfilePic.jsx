@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/profile.JPG"
 
 const ProfilePic = () => {
   return (
@@ -13,6 +13,8 @@ const ProfilePic = () => {
           object-cover
           rounded-full
           shadow-lg
+           shadow-emerald-500 
+          
         "
       />
     </div>

@@ -1,15 +1,16 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Education from "./pages/Education";
 
 const App = () => {
   return (
     <>
-    <div className="bg-slate-800">
+    <div className="bg-stone-800">
       <Navbar />
 
       {/* All pages combined */}
@@ -20,6 +21,11 @@ const App = () => {
       <div id="about">
         <About />
       </div>
+
+       <div id="Education">
+        <Education />
+      </div>
+
 
       <div id="projects">
         <Projects />

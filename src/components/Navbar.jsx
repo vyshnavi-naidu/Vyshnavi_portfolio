@@ -9,32 +9,32 @@ const Navbar = () => {
   const links = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Education", href:"#Education"},
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/vasamsetti-vyshnavi" },
   ];
 
   return (
-    <header className="font-sarif bg-slate-800 fixed w-full z-50 shadow-md">
+    <header className="font-sarif bg-stone-800 fixed w-full z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 text-white">
         
         {/* Logo */}
         <a 
           href="#home" 
-          className="text-2xl font-bold tracking-wide hover:text-blue-400 duration-300"
+          className="text-3xl font-bold tracking-wide text-emerald-500 hover:text-emerald-300 duration-300 hover:scale-110 transition-transform"
         >
-          Portfolio
+          Vyshnavi
         </a>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 text-white">
+        <nav className="hidden md:flex gap-10 text-xl">
           {links.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="font-semibold hover:text-blue-400 transition"
-              target={link.name === "LinkedIn" ? "_blank" : "_self"}
-              rel={link.name === "LinkedIn" ? "noreferrer" : ""}
+              className="relative font-semibold text-white hover:text-emerald-500 transition-transform duration-300
+                         after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-emerald-500 
+                         after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
@@ -51,14 +51,14 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-slate-800 text-white flex flex-col items-center py-4 space-y-4">
+        <div className="md:hidden text-white flex flex-col items-center py-4 space-y-4">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="font-semibold hover:text-blue-400 transition text-lg"
-              target={link.name === "LinkedIn" ? "_blank" : "_self"}
-              rel={link.name === "LinkedIn" ? "noreferrer" : ""}
+              className="relative font-semibold text-lg hover:text-emerald-500 transition duration-300
+                         after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-emerald-500 
+                         after:transition-all after:duration-300 hover:after:w-full"
               onClick={() => setIsOpen(false)} // close menu on click
             >
               {link.name}

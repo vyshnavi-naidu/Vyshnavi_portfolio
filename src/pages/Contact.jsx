@@ -41,10 +41,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-slate-800 flex items-center px-4 py-12">
-      <div className="bg-white rounded-2xl shadow-xl w-full max-w-xl mx-auto p-6 sm:p-10">
+    <section className="min-h-screen bg-stone-800 flex items-center px-4 py-12">
+      <div className="border-3 border-emerald-500 rounded-2xl shadow-lg shadow-emerald-500  w-full max-w-xl mx-auto p-6 sm:p-10">
 
-        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-slate-800">
+        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-emerald-500">
           Contact Me
         </h1>
 
@@ -52,7 +52,7 @@ const Contact = () => {
 
           {/* Name */}
           <div>
-            <label className="flex items-center gap-2 font-semibold text-slate-700">
+            <label className="flex items-center gap-2 font-semibold text-emerald-500">
               <FaUser /> Full Name
             </label>
             <input
@@ -65,7 +65,7 @@ const Contact = () => {
                   setFormData({ ...formData, name: value });
                 }
               }}
-              className="w-full mt-2 p-3 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full mt-2 p-3 text-white border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none border-3 border-emerald-500"
               placeholder="Enter your name"
             />
             {errors.name && (
@@ -75,7 +75,7 @@ const Contact = () => {
 
           {/* Email */}
           <div>
-            <label className="flex items-center gap-2 font-semibold text-slate-700">
+            <label className="flex items-center gap-2 font-semibold text-emerald-500">
               <FaEnvelope /> Email
             </label>
             <input
@@ -85,7 +85,7 @@ const Contact = () => {
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
               }
-              className="w-full mt-2 p-3 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none"
+              className="w-full mt-2 p-3 border text-white rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none border-3 border-emerald-500"
               placeholder="Enter your email"
             />
             {errors.email && (
@@ -95,7 +95,7 @@ const Contact = () => {
 
           {/* Message */}
           <div>
-            <label className="font-semibold text-slate-700">Message</label>
+            <label className="font-semibold text-emerald-500">Message</label>
             <textarea
               rows="4"
               name="message"
@@ -103,7 +103,7 @@ const Contact = () => {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full mt-2 p-3 border rounded-xl focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+              className="w-full mt-2 p-3 border text-white rounded-xl focus:ring-2 border-3 border-emerald-500 focus:ring-emerald-500 outline-none resize-none"
               placeholder="Type your message..."
             />
             {errors.message && (
@@ -114,14 +114,14 @@ const Contact = () => {
           {/* Button */}
           <button
             type="submit"
-            className="w-full bg-slate-700 hover:bg-slate-900 text-white py-3 rounded-xl font-semibold transition"
+            className="w-full bg-emerald-500 hover:bg-emerald-500 text-white py-3 rounded-xl font-semibold transition hover:scale-105 transition-transform duration-300"
           >
             Send Message
           </button>
         </form>
 
         {/* Email */}
-        <p className="text-center text-slate-700 mt-6 break-all">
+        <p className="text-center text-emerald-500 mt-6 break-all">
           <FaEnvelope className="inline mr-2" />
           <b>vyshunaidu234@gmail.com</b>
         </p>
